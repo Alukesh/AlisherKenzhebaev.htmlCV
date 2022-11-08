@@ -7,12 +7,13 @@
     <title>Alisher Web developer</title>
     <link rel="icon" href="./src/img/a.webp">
     <link rel="stylesheet" href="./src/css/style.css">
+    
 </head>
 <body>
     
     <header class="header">
         <h1 class="name">Alisher Kenzhebaev</h1>
-        <p class="header__subtitle">Front-end Web developer</p>
+        <h2 class="header__subtitle">Front-end Web developer</h2>
 
 
         <div class="header__bottom">
@@ -29,10 +30,15 @@
                 </p>
                 <p class="header__links-item">
                     <span>Telegram</span>
-                    <a class="number" target="_blank" href="https://t.me/AlisherKenzhebaev" data-title="Написать"> @AlisherKenzhebaev</a>
+                    <a class="number" target="_blank" href="https://t.me/AlisherKenzhebaev" data-title="Написать фитбек"> @AlisherKenzhebaev</a>
                     <div>
                         <!-- <a href="tel:+996707340701" id="tooltip">+996707340701</a> -->
                     </div>
+                </p>
+                <p class="header__links-item">
+                    <span>Download CV</span>
+                    <a download="Alisher JS dev" href="./src/img/projects/Alisher_Kenzhebaev_CV.pdf"> PDF file</a>,
+                    <a download="Alisher JS dev" href="./src/img/projects/Alisher_Kenzhebaev_CV.docx"> Word</a>
                 </p>
             </div>
 
@@ -43,6 +49,7 @@
     <main class="main">
         <div class="container">
             <section class="stack">
+                <a download="Alisher JS dev" href="./src/img/a.webp">啊</a>
                 <img height="70" src="./src/img/css.webp" alt="CSS">
                 <img height="70" src="./src/img/html.webp" alt="HTML">
                 <img height="80" src="./src/img/es6.jpeg" alt="JS">
@@ -61,17 +68,22 @@
 
                 <section class="summary">
                     <h3>Summary</h3>
+                    <p>front-end, 16.07.2021 - <span id="today"></span></p> <br>
+                    <ul>
+                        <li>React Javascript courses, web developer, 2022
+                            IT run - Bishkek, GB
+                        </li>
+                        <li>
+                           Rest API, React & Redux 14.10.2022 ITC Bootcamp
+                        </li>
+                    </ul>
                     <p class="summary__text">
                         Results-oriented web developer, Looking for a position in a fast-paced
                     company that appreciates hard work, dedication and evolving
                     technical skills. Bilingual, astute and deadline-driven. Seeking a
-                    developer position where a strong understanding of technology and a
-                    marketing background can be best utilise.        
+                    developer position where a leader searchs strong understanding of technology and a
+                    marketing team .        
                     </p>
-                </section>
-
-                <section>
-                    
                 </section>
 
             </div>
@@ -80,33 +92,126 @@
                 <h3>
                     EXPERIENCE
                 </h3>
-                <p>front-end, 16/07/2021 - <span id="today">08/2021</span></p> <br>
+                
                 <ul>
-                    <li>React Javascript, web developer, 2022
-                        IT run - Bishkek, GB
-                    </li>
+                  
                     <li>
-                       
-                    </li>
-                    <li>
-
+                        Байлык банк - Front-end developer ( from 1.11.2022 - now)
+                        <p>выполняю фронт поддержку для проектов внутри корпаративной работы</p>
+                        <p>такие как </p>
                     </li>
                 </ul>
-                </section>
+            </section>
+
+
+
+            <!-- <div id="bubble-wrapper"></div> -->
+
 
         <h3>Portfolio</h3>
         
         <div class="portfolio">
-            <a target="_blank" href="https://alukesh.github.io/stirproj/">
-                stir
-            </a>
+
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" target="_blank" href="https://github.com/Alukesh/stirproj">
+                    stir
+                </a>
+                <div class="">
+                    <div class="portfolio__card-rowinfo">
+                        <img class="portfolio__card-img" src="/src/img/projects/stir.jpeg" alt="stir">
+                        <div class="portfolio__card-text">
+                            <p>CSS project</p>
+                            <p> adaptation</p>
+                            <p>libraries:</p>
+                            <p>fancyapps for picture gallery </p>
+                            <p> animate on scroll </p>
+                            <span>github pages link</span>
+                            <a target="_blank" href="https://alukesh.github.io/stirproj/">
+                                https://alukesh.github.io/stirproj/
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" data-title="Написать" target="_blank" href="https://github.com/Alukesh/basketroom">
+                    basketroom
+                </a>
+                <div class="portfolio__card-rowinfo">
+                    <img class="portfolio__card-img" src="./src/img/projects/basketroom.jpeg" alt="basketroom">
+                    <div class="portfolio__card-text">
+                        <p>online shop</p>
+                        <p>front-end on React with redux-toolkit</p>
+                        <!-- <p>favorites, cart, catalog filters</p> -->
+                        <p>back-end on Mongodb with Node.js </p>
+                        <!-- <p>(from my teacher)</p> -->
+                        <p>Redux persist save redux states to lockalstorage and rewrite initialstate when the user opens page again</p>
+                        <p></p>
+                    </div>    
+                </div>
+            </div>
+
+          
+
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" target="_blank" href="https://alukesh.github.io/stirproj/">
+                    stir
+                </a>
+
+                <div class="card">
+                    <div class="front"><span>Front</span></div>
+                    <div class="back"><span>Back</span></div>
+                </div>
+
+
+            </div>
+
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" target="_blank" href="https://alukesh.github.io/stirproj/">
+                    woomazing
+                </a>
+                <div class="portfolio__card-rowinfo">
+                    <img class="portfolio__card-img" src="./src/img/projects/woomazing.jpeg" alt="woomazing">
+                    <div class="portfolio__card-text">
+                        <p>language tranlation with i18next</p>
+                        <p>registrations and log in</p>
+                        <p>cart and favorites using useContext </p>
+                        <p> & buy history with db json</p>
+                        <p>running host on heroku
+                             <a target="_blank" href="https://woomazing.herokuapp.com/">https://woomazing.herokuapp.com/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" target="_blank" href="https://github.com/Alukesh/vuejs-todo">
+                    Vue js task manager
+                </a>
+                <div class="">
+                    <p>here i tried to learn vue framework and it was my first task to start</p>
+                    <p>I also have used tailwind css </p> <br>
+                    <p>i can view and edit done, important and deleted tasks</p>
+                    <p>before remove, tasks are placed in new section, so i can go read them and then finally delete</p>
+                    <p>all done tasks always go to bottom of list</p>
+                </div>
+            </div>
+            
+            <div class="portfolio__card">
+                <a class="portfolio__card-link" target="_blank" href="https://alukesh.github.io/stirproj/">
+                    stir
+                </a>
+                <button><a href="#">view on git</a></button>
+            </div>
+            
+
         </div>
             
 
-            <audio
+            <!-- <audio
             controls
             src="./music/Boombitto - Вредная.mp3" >
-            <a href="https://music.yandex.ru/album/22820453/track/104964266">
+            <a href="https://music.yandex.ru/album/22820453/track/104964266"> -->
 
 
         </div>
