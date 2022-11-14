@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .container{
     width: 1300px;
@@ -15,8 +16,11 @@
     color: wheat;
     margin-bottom: 40px;
     min-height: 100px;
-    padding: 10px 23% 10px 1px;
+    padding: 10px 23px 10px 10px;
     
+}
+.header__links{
+    margin-right: 160px;
 }
 .header a:hover{
     color: rgb(185, 170, 252);
@@ -120,7 +124,7 @@ opacity: 1;
 
 
 .portfolio{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 90px;
@@ -174,6 +178,43 @@ opacity: 1;
     transition: all 1.5s;
     backface-visibility: hidden;
 }
+.portfolio__card-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__card-btn{
+    width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
+  outline: none;
+  margin-top: 30px;
+  justify-self: end;
+}
+.portfolio__card-btn::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.portfolio__card-btn:hover::before,button:focus::before  {
+width: 9em;
+}
+
 .portfolio__card-rowinfo{
     display: flex;
     gap: 20px;
