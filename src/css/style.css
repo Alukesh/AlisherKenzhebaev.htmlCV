@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Ubuntu, sans-serif;
 }
 .container{
     width: 1300px;
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .header{
     /* background-color: #FDE9D2; */
@@ -74,6 +78,8 @@ h3{
     display: flex;
     column-gap: 10px;
     align-items: center;
+    row-gap: 20px;
+    flex-wrap: wrap-reverse;
 }
 .stack img{
     height: 75px;
@@ -190,7 +196,7 @@ opacity: 1;
   font-size: 15px;
   border: none;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 1;
   box-shadow: 6px 6px 12px #c5c5c5,
   -6px -6px 12px #ffffff;
@@ -226,9 +232,51 @@ width: 9em;
 
 
 
-@media (max-wigth: 700px){
+@media (max-width: 700px){
     .portfolio__card{
         flex: 0 0 33%;
-        background-color: #f00;
+    }
+}
+
+@media (max-width: 800px){
+   
+    .portfolio__card{
+        flex: 0 0 53%;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 599px){
+    .header__bottom{
+        flex-direction: column;
+    }
+    .header{
+        background: none;
+        background-color: #005051;
+    }
+}
+@media (max-width: 480px){
+    .header{
+        background: none;
+        background-color: #005051;
+    }
+    .header__links{
+        margin-right: 50px;
+    }
+    .portfolio__card{
+        flex: 0 0 73%;
+        width: fit-content;
+    }
+    .portfolio__card-back{
+        padding: 0 10px;
+    }
+    .portfolio__card-link{
+        display: block;
+        overflow-wrap: break-word;
+        width: 100%;
+    }
+    .auto-height{
+        height: fit-content;
+        padding: 10px 0;
     }
 }

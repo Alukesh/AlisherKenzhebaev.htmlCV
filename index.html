@@ -18,7 +18,7 @@
     
     
             <div class="header__bottom">
-              <img class="photo" height="150" src="./src/img/WeChat hood.jpg" alt="Alisher">
+                <img class="photo" height="150" src="./src/img/WeChat hood.jpg" alt="Alisher">
                
                 <div class="header__links">
                     <p class="header__links-item">
@@ -59,11 +59,18 @@
                 <img height="70" src="./src/img/react.webp" alt="react">
                 <img height="70" src="./src/img/redux.webp" alt="redux">
                 <img height="80" src="./src/img/andr.png" alt="redux">
-                <span> Rest API , </span>
-                <span>git ,</span>
-                <span>Redux-toolkit ,</span>
-                <span>Scss ,</span>
-                <span>Методология БЭМ </span>
+                <div>
+                    <span>
+                        <span> Rest API ,</span>
+                        <span>git,</span>
+                        <span>Redux-toolkit,</span>
+                    </span>
+                    <span>
+                        <span>Scss,</span>
+                        <span>Методология БЭМ</span>
+                    </span>
+                </div>
+                
             </section>
 
             <div class="main__row">
@@ -98,7 +105,8 @@
                     <li>
                         Байлык банк - Front-end developer ( from 1.11.2022 - now)
                         <p>выполняю фронт поддержку для проектов внутри корпаративной работы</p>
-                        <p>такие как </p>
+                        <p>такие как работа с бекендом и докером и разработка системы бронирования и жалоб</p>
+                        <p>поддержку прежнего фронта</p>
                     </li>
                 </ul>
             </section>
@@ -126,7 +134,7 @@
                             <p>fancyapps for picture gallery </p>
                             <p> animate on scroll </p>
                             <span>github pages link</span>
-                            <a target="_blank" href="https://alukesh.github.io/stirproj/">
+                            <a class="portfolio__card-link" target="_blank" href="https://alukesh.github.io/stirproj/">
                                 https://alukesh.github.io/stirproj/
                             </a>
                             <a href="https://github.com/Alukesh/stirproj"><button class="portfolio__card-btn">view on git</button></a>
@@ -143,11 +151,11 @@
                     <img class="portfolio__card-img" src="./src/img/projects/basketroom.jpeg" alt="basketroom">
                     <div class="portfolio__card-text">
                         <p>online shop</p>
-                        <p>front-end on React with redux-toolkit</p>
+                        <p>Front-end on React with redux-toolkit</p>
                         <!-- <p>favorites, cart, catalog filters</p> -->
                         <p>back-end on Mongodb with Node.js </p>
                         <!-- <p>(from my teacher)</p> -->
-                        <p>Redux persist save redux states to lockalstorage and rewrite initialstate when the user opens page again</p>
+                        <p>Redux persist save redux states to lockalstorage and redo initialstate when the user opens page again</p>
                         <p></p>
                         <a href="https://github.com/Alukesh/basketroom"><button class="portfolio__card-btn">view on git</button></a>
                     </div>    
@@ -157,15 +165,23 @@
           
 
             <div class="portfolio__card">
-                <a class="portfolio__card-link" target="_blank" href="https://alukesh.github.io/stirproj/">
-                    stir
+                <a class="portfolio__card-link" target="_blank" href="#">
+                    Crop image on React
                 </a>
 
-                <div class="card">
-                    <div class="front"><span>Front</span></div>
-                    <div class="back"><span>Back</span></div>
+                <div class="portfolio__card-rowinfo">
+                    <img class="portfolio__card-img" src="./src/img/projects/imageCropper.jpg" alt="basketroom">
+                    <div class="portfolio__card-text">
+                        <p>online shop</p>
+                        <p>Front-end on React with redux-toolkit</p>
+                        <!-- <p>favorites, cart, catalog filters</p> -->
+                        <p>back-end on Mongodb with Node.js </p>
+                        <!-- <p>(from my teacher)</p> -->
+                        <p>Redux persist save redux states to lockalstorage and rewrite initialstate when the user opens page again</p>
+                        <p></p>
+                        <a target="_blank" href="https://github.com/Alukesh/imageCrop"><button class="portfolio__card-btn">view on git</button></a>
+                    </div>    
                 </div>
-
 
             </div>
 
@@ -178,25 +194,25 @@
                     <div class="portfolio__card-text">
                         <p>language tranlation with i18next</p>
                         <p>registrations and log in</p>
-                        <p>cart and favorites using useContext </p>
+                        <p>Cart and favorites using useContext </p>
                         <p> & buy history with db json</p>
                         <p>running host on heroku
-                             <a target="_blank" href="https://woomazing.herokuapp.com/">https://woomazing.herokuapp.com/</a>
+                             <a class="portfolio__card-link" target="_blank" href="https://woomazing.herokuapp.com/">https://woomazing.herokuapp.com/</a>
                         </p>
                         <a href="https://github.com/Alukesh/Womazing"><button class="portfolio__card-btn">view on git</button></a>
                     </div>
                 </div>
             </div>
-            <div class="portfolio__card">
+            <div class="portfolio__card auto-height">
                 <a class="portfolio__card-link" target="_blank" href="https://github.com/Alukesh/vuejs-todo">
                     Vue js task manager
                 </a>
                 <div class="portfolio__card-back">
-                    <p>here i tried to learn vue framework and it was my first task to start</p>
+                    <p>Here i tried to learn vue framework and it was my first task to start</p>
                     <p>I also have used tailwind css </p> <br>
-                    <p>i can view and edit done, important and deleted tasks</p>
-                    <p>before remove, tasks are placed in new section, so i can go read them and then finally delete</p>
-                    <p>all done tasks always go to bottom of list</p>
+                    <p>available view and edit important, done and deleted tasks</p>
+                    <p>Before remove, tasks are placed in new section, so i can go read them <br> and then finally delete</p>
+                    <p>All done tasks always go to the bottom of list</p>
                     <a href="https://github.com/Alukesh/vuejs-todo"><button class="portfolio__card-btn">view on git</button></a>
                 </div>
             </div>
