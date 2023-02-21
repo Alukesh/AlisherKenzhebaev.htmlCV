@@ -141,15 +141,25 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8px 0;
+    transition: all .3s ease 0s;
+}
+.portfolio__card>.portfolio__card-link{
+    background-color: #f18181;
+    color:#fefdff;
+}
+.portfolio__card-link:hover{
+    color:#005051;
 }
 
 
 .portfolio__card{
-    padding: 8px 0 0 0;
     border-radius: 10px;
     text-align: center;
     flex: 1 1 24%;
     border: 1px solid #005051;
+    border-color: #d1d9e6;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     height: 300px;
     overflow-x:hidden;
     overflow-y:hidden;
@@ -166,7 +176,9 @@ opacity: 1;
     height: 300px;
     object-fit: cover;
     object-position: top;
-    border: 1px solid #005051;
+    /* border: 1px solid #005051; */
+    border-color: #d1d9e6;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     
 }
 .portfolio__card-text{
