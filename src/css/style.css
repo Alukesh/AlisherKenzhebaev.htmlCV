@@ -80,6 +80,7 @@ h3{
     align-items: center;
     row-gap: 20px;
     flex-wrap: wrap-reverse;
+    color: #333333;
 }
 .stack img{
     height: 75px;

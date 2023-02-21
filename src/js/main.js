@@ -19,6 +19,5 @@ const toDate = document.querySelector('#today')
 const today = new Date()
 const now = today.toLocaleString()
 toDate.textContent = now.slice(0,10)
-today.addEventListener('mouseout', () => alert(1))
 
 
